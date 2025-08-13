@@ -39,13 +39,13 @@ O sistema então converte essas métricas em relatórios claros e sugestões de 
    - Clique no botão **Fork** no canto superior direito do repositório no GitHub.
 
 2. **Crie uma branch** para sua nova feature:
-   git checkout -b feature/nome-da-feature
+   (git checkout -b feature/nome-da-feature)
    
 3. **Faça commit** das suas alterações:
-  git commit -m 'Descrição'
+  (git commit -m 'Descrição')
   
 4. **Envie para o seu repositório remoto**:
-  git push origin feature/nome-da-feature
+  (git push origin feature/nome-da-feature)
 
 5. **Abra um Pull Request**:
   No GitHub, vá até o seu fork e clique em Compare & pull request.
