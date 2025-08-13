@@ -1,27 +1,5 @@
 # Projeto_Extensao
-Projeto de Extensão dos Alunos da Unifil
-
-# 📚 Projeto de Extensão - Interogatio
-
-**Tema do projeto:** App de análise de entrevistas profissional  
-**Instituição:** UniFil — Universidade Filadélfia  
-**Tecnologias:** Python + [IA para análise do áudio] + Next.js
-
-O **Interrogatio** é um projeto de extensão universitária com o objetivo de auxiliar candidatos, estudantes e profissionais a melhorarem seu desempenho em entrevistas, fornecendo **feedbacks automáticos e personalizados** com base em análise de áudio, tom de voz, formalidade e clareza das respostas.
-
----
-
-## 🖥 Visão Geral
-
-O aplicativo capta a entrevista (áudio), processa os dados e aplica técnicas de **IA e NLP** para avaliar:
-
-- **Pronúncia e clareza** da fala
-- **Formalidade e estilo** da linguagem
-- **Emoção e tom de voz** (alegria, confiança, nervosismo…)
-- **Elaboração das respostas** (coerência, conectivos, clareza)
-- **Fluência e pausas** (hesitações, “é…”, “hum…”)
-
-O sistema então converte essas métricas em relatórios claros e sugestões de melhoria, ajudando o usuário a evoluir em sua comunicação.
+Portfolio do projeto de extensão Interogatio
 
 ## 📂 Estrutura do Portfólio
 
