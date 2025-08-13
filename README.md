@@ -12,6 +12,18 @@ Plataforma inteligente para análise e feedback de entrevistas profissionais. O 
 - **Reflexão sobre a extensão curricular**: o que aprendemos e impactamos  
 - **Comunidade**: público-alvo e benefícios sociais
 
+- ## 📖 Justificativa do Tema
+
+A comunicação eficaz em entrevistas é fundamental para o sucesso profissional, mas nem todos têm acesso a feedbacks qualificados. O Interrogatio preenche essa lacuna com tecnologia acessível e automatizada, auxiliando no desenvolvimento pessoal e profissional.
+
+---
+
+## 📝 Reflexão sobre a Extensão Curricular
+
+Este projeto representa uma oportunidade única de aplicar conhecimentos acadêmicos em um contexto real e socialmente relevante, integrando inteligência artificial, processamento de áudio e linguística computacional para gerar impacto positivo na comunidade.
+
+---
+
 ## 🚀 Tecnologias
 
 ### Frontend
@@ -144,3 +156,7 @@ MIT
 ---
 
 Desenvolvido como projeto de extensão na UniFil.
+
+✍️ **Equipe Interrogatio**  
+🏫 UniFil - Universidade Filadélfia  
+📅 2025
