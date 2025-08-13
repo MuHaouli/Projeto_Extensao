@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎯 Interrogatio
 
-## Getting Started
+Plataforma inteligente para análise e feedback de entrevistas profissionais. O Interrogatio utiliza tecnologias modernas para ajudar recrutadores e entrevistadores a obterem insights valiosos durante o processo seletivo.
 
-First, run the development server:
+## 🚀 Tecnologias
 
+- **Frontend:**
+  - Next.js 14
+  - TypeScript
+  - Tailwind CSS
+  - Inter font (Google Fonts)
+
+- **Backend (em desenvolvimento):**
+  - Python (FastAPI/Flask)
+  - Processamento de Linguagem Natural
+  - Análise de Sentimentos
+
+## 🛠 Como Rodar Localmente
+
+1. Clone o repositório:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/seu-usuario/interrogatio.git
+cd interrogatio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale as dependências:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Rode o servidor de desenvolvimento:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Acesse [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+## 📁 Estrutura de Pastas
 
-To learn more about Next.js, take a look at the following resources:
+```
+interrogatio/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   └── globals.css
+│   └── components/
+├── public/
+├── package.json
+├── tailwind.config.ts
+└── README.md
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[Em breve] O projeto será deployado na Vercel.
 
-## Deploy on Vercel
+## 🎨 Paleta de Cores
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Primária: `#1B263B` (azul marinho)
+- Secundária: `#415A77` (azul acinzentado)
+- Acento: `#E0E1DD` (cinza claro)
+- Destaque: `#F4A261` (laranja suave)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👥 Créditos
+
+Desenvolvido como projeto de análise de entrevistas profissionais.
+
+## 📝 Licença
+
+MIT
