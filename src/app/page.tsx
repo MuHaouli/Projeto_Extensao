@@ -30,13 +30,15 @@ export default function Home() {
             <Link href="/" className="text-2xl font-bold text-[#1B263B] hover:scale-105 transition-transform">
               Interrogatio
             </Link>
+            <div className="space-x-8">
+              <Link href="/" className="nav-link">Início</Link>
+              <Link href="/quem-somos" className="nav-link">Quem Somos</Link>
+              <Link href="/comunidade" className="nav-link">Comunidade</Link>
+              <Link href="/visao" className="nav-link">Visão</Link>
+              <Link href="/extensao" className="nav-link">Extensão</Link>
+            </div>
+          </nav>
           </div> 
-          <div className="space-x-8 flex">
-            <Link href="/" className="nav-link">Início</Link>
-            <Link href="/quem-somos" className="nav-link">Quem Somos</Link>
-            <Link href="/comunidade" className="nav-link">Comunidade</Link>
-            <Link href="/extensao" className="nav-link">Extensão</Link>
-          </div>
         </div>
       </header>
 
