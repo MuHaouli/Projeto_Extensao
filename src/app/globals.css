@@ -19,10 +19,33 @@ body {
   }
   
   .btn-primary {
-    @apply bg-[#1B263B] text-white px-6 py-2 rounded-lg hover:bg-[#415A77] transition-colors;
+    @apply bg-[#1B263B] text-white px-6 py-2 rounded-lg shadow-md transition 
+           hover:bg-[#415A77] hover:scale-105 hover:shadow-lg active:scale-95;
   }
   
   .nav-link {
-    @apply text-gray-700 hover:text-[#1B263B] transition-colors;
+    @apply relative text-gray-700 transition-colors duration-200;
+  }
+
+  .nav-link::after {
+    content: "";
+    @apply absolute left-0 -bottom-1 w-0 h-[2px] bg-[#1B263B] transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  /* Animação suave para seções */
+  .fade-in-up {
+    @apply opacity-0 translate-y-4;
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
