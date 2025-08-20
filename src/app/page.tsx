@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 // Imagens fictícias para o carrossel
+//teste do carrosel
 const carouselImages = [
   '/carousel1.jpg',
   '/carousel2.jpg',
@@ -29,7 +30,7 @@ export default function Home() {
             <Link href="/" className="text-2xl font-bold text-[#1B263B] hover:scale-105 transition-transform">
               Interrogatio
             </Link>
-          </div>
+          </div> 
           <div className="space-x-8 flex">
             <Link href="/" className="nav-link">Início</Link>
             <Link href="/quem-somos" className="nav-link">Quem Somos</Link>
