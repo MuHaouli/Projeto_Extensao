@@ -35,7 +35,7 @@ export default function Home() {
               <Link href="/quem-somos" className="nav-link">Quem Somos</Link>
               <Link href="/comunidade" className="nav-link">Comunidade</Link>
               <Link href="/visao" className="nav-link">Visão</Link>
-
+              <Link href="/extensao" className="nav-link">Extensão</Link>
             </div>
           </nav>
           </div> 
