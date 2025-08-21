@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: #1B263B;
-  --color-secondary: #415A77;
-  --color-accent: #E0E1DD;
-  --color-highlight: #F4A261;
+  --color-primary: #000000;
+  --color-secondary: #7890A8;
+  --color-accent: #304878;
+  --color-highlight: #F0A818;
+  --color-dark: #181848;
 }
 
 body {
@@ -19,8 +20,8 @@ body {
   }
   
   .btn-primary {
-    @apply bg-[#1B263B] text-white px-6 py-2 rounded-lg shadow-md transition 
-           hover:bg-[#415A77] hover:scale-105 hover:shadow-lg active:scale-95;
+    @apply bg-[#000000] text-white px-6 py-2 rounded-lg shadow-md transition 
+           hover:bg-[#304878] hover:scale-105 hover:shadow-lg active:scale-95;
   }
   
   .nav-link {
@@ -29,7 +30,7 @@ body {
 
   .nav-link::after {
     content: "";
-    @apply absolute left-0 -bottom-1 w-0 h-[2px] bg-[#1B263B] transition-all duration-300;
+    @apply absolute left-0 -bottom-1 w-0 h-[2px] bg-[#000000] transition-all duration-300;
   }
 
   .nav-link:hover::after {
