@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import Link from "next/link";
+import Image from "next/image";
 
 export default function CommunityPage() {
   return (
@@ -7,7 +8,7 @@ export default function CommunityPage() {
       <header className="bg-white shadow-sm">
         <div className="container-custom py-4">
           <nav className="flex items-center justify-between">
-            <Link href="/" className="text-2xl font-bold text-[#1B263B]">
+            <Link href="/" className="text-2xl font-bold text-[#000000]">
               Interrogatio
             </Link>
             <div className="space-x-8">
@@ -16,7 +17,6 @@ export default function CommunityPage() {
               <Link href="/comunidade" className="nav-link">Comunidade</Link>
               <Link href="/extensao" className="nav-link">Extensão</Link>
               <Link href="/visao" className="nav-link">Visão</Link>
-
             </div>
           </nav>
         </div>
@@ -24,39 +24,81 @@ export default function CommunityPage() {
 
       {/* Hero Section */}
       <main className="flex-grow">
-        <section className="bg-gradient-to-b from-[#E0E1DD] to-white">
-          <div className="container-custom py-20">
-            <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-5xl font-bold text-[#1B263B] mb-6">
+        <section className="bg-gradient-to-b from-[#7890A8] to-white py-20">
+          <div className="container-custom">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-5xl font-bold text-[#000000] mb-6">
                 Comunidade
               </h1>
-              <p className="text-xl text-[#415A77] mb-8">
-                Transforme suas entrevistas profissionais com análises inteligentes e feedbacks automáticos.
-                Descubra insights valiosos e aprimore seu processo seletivo.
+              <p className="text-xl text-[#304878] mb-12">
+                Transforme suas entrevistas profissionais com análises inteligentes e feedbacks automáticos. Descubra insights valiosos e aprimore seu processo seletivo.
               </p>
-              <h1 className="text-5xl font-bold text-[#1B263B] mb-6">
+            </div>
+          </div>
+        </section>
+
+        {/* Beneficiados */}
+        <section className="py-16 bg-gray-50">
+          <div className="container-custom">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl font-bold text-[#000000] mb-12 text-center">
                 Quem são as pessoas beneficiadas?
-              </h1>
-              <p className="text-xl text-[#415A77] mb-8"> 
-                O aplicativo é voltado principalmente para: <br />
-                 <br />
-                - Profissionais em busca do primeiro emprego <br />
-                - Jovens que estão entrando no mercado de trabalho <br />
-                - Pessoas que desejam recolocação profissional <br />
-                - Candidatos que buscam melhorar suas habilidades de comunicação em entrevistas. <br />
-              </p>
-              <h1 className="text-5xl font-bold text-[#1B263B] mb-6">
+              </h2>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="bg-white rounded-lg shadow-md p-6 text-center">
+                  <div className="w-16 h-16 bg-[#000000] rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-white text-2xl">🎓</span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-[#000000] mb-2">Primeiro Emprego</h3>
+                  <p className="text-[#304878]">Profissionais em busca do primeiro emprego</p>
+                </div>
+                <div className="bg-white rounded-lg shadow-md p-6 text-center">
+                  <div className="w-16 h-16 bg-[#7890A8] rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-white text-2xl">🧑‍💼</span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-[#000000] mb-2">Jovens no Mercado</h3>
+                  <p className="text-[#304878]">Jovens que estão entrando no mercado de trabalho</p>
+                </div>
+                <div className="bg-white rounded-lg shadow-md p-6 text-center">
+                  <div className="w-16 h-16 bg-[#F0A818] rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-white text-2xl">🔄</span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-[#000000] mb-2">Recolocação</h3>
+                  <p className="text-[#304878]">Pessoas que desejam recolocação profissional</p>
+                </div>
+                <div className="bg-white rounded-lg shadow-md p-6 text-center">
+                  <div className="w-16 h-16 bg-[#304878] rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-white text-2xl">🗣️</span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-[#000000] mb-2">Comunicação</h3>
+                  <p className="text-[#304878]">Candidatos que buscam melhorar suas habilidades de comunicação</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contribuição */}
+        <section className="py-16 bg-white">
+          <div className="container-custom">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-[#000000] mb-12 text-center">
                 Como o projeto contribui para a comunidade?
-              </h1>
-              <p className="text-xl text-[#415A77] mb-8">
-                Por meio da nossa inteligência artificial, oferecemos uma experiência prática e acessível de simulação de entrevistas de emprego. O usuário grava um vídeo respondendo às perguntas, e a IA analisa sua performance, destacando pontos que podem ser aprimorados, como: <br />
-                <br />
-                - Tom de voz <br />
-                - Clareza e objetividade nas respostas <br />
-                - Postura e segurança durante a fala <br />
-                - Pontos fortes apresentados ao recrutador <br />
-                <br/>
-                Dessa forma, ajudamos candidatos a se prepararem melhor para entrevistas reais, aumentando sua confiança, aprimorando suas habilidades de comunicação e, consequentemente, fortalecendo suas oportunidades no mercado de trabalho. Nosso objetivo é contribuir para que mais pessoas estejam preparadas, seguras e competitivas em suas jornadas profissionais.
+              </h2>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-[#7890A8] rounded-lg shadow-md p-6 text-center flex flex-col items-center">
+                  <span className="text-white text-4xl mb-4">🤖</span>
+                  <h3 className="text-xl font-semibold text-white mb-2">Simulação com IA</h3>
+                  <p className="text-white">Experiência prática e acessível de simulação de entrevistas de emprego com análise de performance.</p>
+                </div>
+                <div className="bg-[#F0A818] rounded-lg shadow-md p-6 text-center flex flex-col items-center">
+                  <span className="text-white text-4xl mb-4">💬</span>
+                  <h3 className="text-xl font-semibold text-white mb-2">Feedback Personalizado</h3>
+                  <p className="text-white">Feedback sobre tom de voz, clareza, postura, pontos fortes e recomendações para evolução.</p>
+                </div>
+              </div>
+              <p className="text-lg text-[#304878] font-medium mt-8 text-center">
+                Nosso objetivo é contribuir para que mais pessoas estejam preparadas, seguras e competitivas em suas jornadas profissionais.
               </p>
             </div>
           </div>
@@ -64,7 +106,7 @@ export default function CommunityPage() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#1B263B] text-white py-6">
+      <footer className="bg-[#000000] text-white py-6">
         <div className="container-custom text-center">
           <p>© 2025 Interrogatio. Todos os direitos reservados.</p>
         </div>
