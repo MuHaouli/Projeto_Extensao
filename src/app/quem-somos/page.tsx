@@ -12,9 +12,11 @@ export default function QuemSomos() {
                Interrogatio
              </Link>
              <div className="space-x-8">
-               <Link href="/" className="nav-link">Início</Link>
-               <Link href="/quem-somos" className="nav-link font-semibold text-[#000000]">Quem Somos</Link>
-               <Link href="/comunidade" className="nav-link">Comunidade</Link>
+              <Link href="/" className="nav-link">Início</Link>
+              <Link href="/quem-somos" className="nav-link">Quem Somos</Link>
+              <Link href="/comunidade" className="nav-link">Comunidade</Link>
+              <Link href="/extensao" className="nav-link">Extensão</Link>
+              <Link href="/visao" className="nav-link">Visão</Link>
              </div>
           </nav>
         </div>
