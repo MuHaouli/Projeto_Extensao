@@ -1,14 +1,13 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function VisaoPage() {
     return (
-        <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#E0E1DD] to-white">
+        <div className="min-h-screen flex flex-col">
             {/* Header */}
-            <header className="bg-white shadow-sm sticky top-0 z-10">
+            <header className="bg-white shadow-sm">
                 <div className="container-custom py-4">
                     <nav className="flex items-center justify-between">
-                        <Link href="/" className="text-2xl font-bold text-[#1B263B]">
+                        <Link href="/" className="text-2xl font-bold text-[#000000]">
                             Interrogatio
                         </Link>
                         <div className="space-x-8">
@@ -24,49 +23,94 @@ export default function VisaoPage() {
 
             {/* Hero Section */}
             <main className="flex-grow">
-                <section className="relative bg-gradient-to-br from-[#E0E1DD] to-white py-20 fade-in-up">
-                    <div className="container-custom flex flex-col md:flex-row items-center gap-12">
-                        <div className="md:w-1/2 text-center md:text-left">
-                            <h1 className="text-5xl font-extrabold text-[#1B263B] mb-6 drop-shadow-lg">
-                                Visão de futuro <span className="text-[#304878]">Interrogatio</span>
+                <section className="bg-gradient-to-b from-[#7890A8] to-white py-20">
+                    <div className="container-custom">
+                        <div className="max-w-4xl mx-auto text-center">
+                            <h1 className="text-5xl font-bold text-[#000000] mb-6">
+                                Visão de Futuro
                             </h1>
-                            <p className="text-xl text-[#415A77] mb-8">
+                            <p className="text-xl text-[#304878] mb-12">
                                 O Interrogatio nasceu como um projeto acadêmico de extensão, mas possui grande potencial de evolução para além do ambiente universitário.
                             </p>
-                            <ul className="text-lg text-[#304878] text-left mb-8 space-y-2">
-                                <li>• Plataforma acessível a empresas de RH, escolas e consultorias de carreira</li>
-                                <li>• Integração com plataformas de videoconferência (Zoom, Google Meet, Microsoft Teams) para análise em tempo real</li>
-                                <li>• Dashboard com métricas de evolução individual ao longo de diversas entrevistas</li>
-                                <li>• <span className="font-semibold">Personalização por área profissional</span>, ajustando critérios de análise para entrevistas técnicas, comportamentais ou acadêmicas</li>
-                                <li>• <span className="font-semibold">Gamificação e trilhas de aprendizado</span>, com recomendações práticas, exercícios de fala e simulações</li>
-                                <li>• <span className="font-semibold">Expansão internacional</span>, com suporte a múltiplos idiomas e adaptação a diferentes contextos culturais</li>
-                            </ul>
-                            <p className="text-lg text-[#415A77] font-medium">
+                        </div>
+                    </div>
+                </section>
+
+                {/* Possibilidades Futuras */}
+                <section className="py-16 bg-gray-50">
+                    <div className="container-custom">
+                        <div className="max-w-6xl mx-auto">
+                            <h2 className="text-3xl font-bold text-[#000000] mb-12 text-center">
+                                Possibilidades Futuras
+                            </h2>
+                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div className="bg-white rounded-lg shadow-md p-6 text-center flex flex-col items-center">
+                                    <div className="w-16 h-16 bg-[#000000] rounded-full mx-auto mb-4 flex items-center justify-center">
+                                        <span className="text-white text-2xl">🌐</span>
+                                    </div>
+                                    <h3 className="text-xl font-semibold text-[#000000] mb-2">Plataforma Acessível</h3>
+                                    <p className="text-[#304878]">Empresas de RH, escolas e consultorias de carreira</p>
+                                </div>
+                                <div className="bg-white rounded-lg shadow-md p-6 text-center flex flex-col items-center">
+                                    <div className="w-16 h-16 bg-[#7890A8] rounded-full mx-auto mb-4 flex items-center justify-center">
+                                        <span className="text-white text-2xl">💻</span>
+                                    </div>
+                                    <h3 className="text-xl font-semibold text-[#000000] mb-2">Integração com Videoconferência</h3>
+                                    <p className="text-[#304878]">Zoom, Google Meet, Microsoft Teams para análise em tempo real</p>
+                                </div>
+                                <div className="bg-white rounded-lg shadow-md p-6 text-center flex flex-col items-center">
+                                    <div className="w-16 h-16 bg-[#F0A818] rounded-full mx-auto mb-4 flex items-center justify-center">
+                                        <span className="text-white text-2xl">📊</span>
+                                    </div>
+                                    <h3 className="text-xl font-semibold text-[#000000] mb-2">Dashboard de Métricas</h3>
+                                    <p className="text-[#304878]">Evolução individual ao longo de diversas entrevistas</p>
+                                </div>
+                                <div className="bg-white rounded-lg shadow-md p-6 text-center flex flex-col items-center">
+                                    <div className="w-16 h-16 bg-[#304878] rounded-full mx-auto mb-4 flex items-center justify-center">
+                                        <span className="text-white text-2xl">⚙️</span>
+                                    </div>
+                                    <h3 className="text-xl font-semibold text-[#000000] mb-2">Personalização Profissional</h3>
+                                    <p className="text-[#304878]">Critérios de análise para entrevistas técnicas, comportamentais ou acadêmicas</p>
+                                </div>
+                                <div className="bg-white rounded-lg shadow-md p-6 text-center flex flex-col items-center">
+                                    <div className="w-16 h-16 bg-[#7890A8] rounded-full mx-auto mb-4 flex items-center justify-center">
+                                        <span className="text-white text-2xl">🎮</span>
+                                    </div>
+                                    <h3 className="text-xl font-semibold text-[#000000] mb-2">Gamificação e Trilhas</h3>
+                                    <p className="text-[#304878]">Recomendações práticas, exercícios de fala e simulações</p>
+                                </div>
+                                <div className="bg-white rounded-lg shadow-md p-6 text-center flex flex-col items-center">
+                                    <div className="w-16 h-16 bg-[#F0A818] rounded-full mx-auto mb-4 flex items-center justify-center">
+                                        <span className="text-white text-2xl">🌎</span>
+                                    </div>
+                                    <h3 className="text-xl font-semibold text-[#000000] mb-2">Expansão Internacional</h3>
+                                    <p className="text-[#304878]">Suporte a múltiplos idiomas e adaptação a diferentes contextos culturais</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Consolidação */}
+                <section className="py-16 bg-white">
+                    <div className="container-custom">
+                        <div className="max-w-4xl mx-auto text-center">
+                            <h2 className="text-3xl font-bold text-[#000000] mb-8">
+                                Consolidação do Interrogatio
+                            </h2>
+                            <p className="text-lg text-[#304878] font-medium">
                                 Com essas melhorias, o Interrogatio pode se consolidar como uma ferramenta inovadora de <span className="font-bold">treinamento de entrevistas</span> e <span className="font-bold">desenvolvimento de comunicação profissional</span>, alcançando tanto indivíduos quanto organizações.
                             </p>
-                        </div>
-                        <div className="md:w-1/2 flex justify-center">
-                            <Image
-                                src="/visaoLogo.png"
-                                alt="Visão do futuro"
-                                width={400}
-                                height={400}
-                                className="rounded-2xl shadow-xl border-4 border-[#304878] bg-white"
-                                priority
-                            />
+
                         </div>
                     </div>
                 </section>
             </main>
 
             {/* Footer */}
-            <footer className="bg-[#1B263B] text-white py-6 mt-12">
-                <div className="container-custom flex flex-col md:flex-row items-center justify-between">
-                    <div className="flex items-center gap-3 mb-4 md:mb-0">
-                        <Image src="/visaoLogo.png" alt="Visao Logo" width={40} height={40} className="bg-white rounded-full p-1" />
-                        <span className="font-semibold">Projeto de Extensão Unifil</span>
-                    </div>
-                    <p className="text-sm">© 2025 Interrogatio. Todos os direitos reservados.</p>
+            <footer className="bg-[#000000] text-white py-6">
+                <div className="container-custom text-center">
+                    <p>© 2025 Interrogatio. Todos os direitos reservados.</p>
                 </div>
             </footer>
         </div>
