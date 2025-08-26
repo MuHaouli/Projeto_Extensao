@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import dynamic from "next/dynamic";
+
+const Chatbot = dynamic(() => import("./components/Chatbot"), { ssr: false });
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <Chatbot />
+      </body>
     </html>
   );
 }
