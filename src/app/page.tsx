@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
+import Navbar from "./components/Navbar";
 
 // Imagens fictícias para o carrossel
 //teste do carrosel
@@ -29,28 +30,7 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="bg-white shadow-sm fade-in-up">
-        <div className="container-custom py-4 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <img 
-              src="/unifil-logo.png" 
-              alt="Logo UniFil" 
-              className="h-12 w-auto"
-            />
-            <Link href="/" className="text-2xl font-bold text-[#1B263B] hover:scale-105 transition-transform">
-              Interrogatio
-            </Link>
-          </div> 
-          <div className="space-x-8 flex">
-            <Link href="/" className="nav-link">Início</Link>
-            <Link href="/quem-somos" className="nav-link">Quem Somos</Link>
-            <Link href="/comunidade" className="nav-link">Comunidade</Link>
-            <Link href="/extensao" className="nav-link">Extensão</Link>
-            <Link href="/visao" className="nav-link">Visão</Link>
-
-          </div>
-        </div>
-      </header>
+      <Navbar />
 
       {/* Hero Section */}
       <main className="flex-grow">

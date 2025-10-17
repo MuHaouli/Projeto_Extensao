@@ -1,26 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
+import Navbar from "../components/Navbar";
 
 export default function CommunityPage() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="container-custom py-4">
-          <nav className="flex items-center justify-between">
-            <Link href="/" className="text-2xl font-bold text-[#000000]">
-              Interrogatio
-            </Link>
-            <div className="space-x-8">
-              <Link href="/" className="nav-link">Início</Link>
-              <Link href="/quem-somos" className="nav-link">Quem Somos</Link>
-              <Link href="/comunidade" className="nav-link">Comunidade</Link>
-              <Link href="/extensao" className="nav-link">Extensão</Link>
-              <Link href="/visao" className="nav-link">Visão</Link>
-            </div>
-          </nav>
-        </div>
-      </header>
+      <Navbar />
 
       {/* Hero Section */}
       <main className="flex-grow">
