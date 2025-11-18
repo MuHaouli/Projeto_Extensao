@@ -19,6 +19,7 @@ export default function Navbar() {
             <Link href="/extensao" className="nav-link">Extensão</Link>
             <Link href="/visao" className="nav-link">Visão</Link>
             <Link href="/documentacao" className="nav-link">Documentação</Link>
+            <Link href="/prototipo" className="nav-link">Telas</Link>
           </div>
         </nav>
       </div>
