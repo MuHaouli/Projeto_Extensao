@@ -8,15 +8,36 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 interface Imagem {
   src: string;
   titulo: string;
+  descricao: string;
 }
 
 export default function PrototipoPage() {
   const imagens: Imagem[] = [
-    { src: "/figma/tela1.png", titulo: "Tela Inicial" },
-    { src: "/figma/tela2.png", titulo: "Tela de Login" },
-    { src: "/figma/tela3.png", titulo: "Dashboard" },
-    { src: "/figma/tela4.png", titulo: "Simulação de Entrevista" },
-    { src: "/figma/tela5.png", titulo: "Resultados e Feedback" },
+    { 
+      src: "/figma/tela1.png", 
+      titulo: "PÁGINA INICIAL",
+      descricao: "Esta tela é somente para chamar atenção e direcionar o usuário para o que serve o sistema, dando uma leve introdução e servindo como uma página de apresentação."
+    },
+    { 
+      src: "/figma/tela2.png", 
+      titulo: "PÁGINA DE LOGIN/CADASTRO",
+      descricao: "O usuário irá logar nesta tela com as suas credenciais previamente cadastradas, se ele não possuir uma conta ele irá poder se cadastrar clicando no botão \"Registre-se\"."
+    },
+    { 
+      src: "/figma/tela3.png", 
+      titulo: "PÁGINA DO MENU",
+      descricao: "Menu principal onde o usuário consegue selecionar a ação desejada."
+    },
+    { 
+      src: "/figma/tela4.png", 
+      titulo: "PÁGINA DE DASHBOARDS",
+      descricao: "Esta página irá demonstrar o dashboard com as evoluções do usuário em cada entrevista, mostrando qual habilidade ele melhorou, a porcentagem de melhora e também a entrevista."
+    },
+    { 
+      src: "/figma/tela5.png", 
+      titulo: "PÁGINA DE ENTREVISTAS",
+      descricao: "Página onde é exibido as entrevistas já realizadas pelo usuário."
+    },
   ];
 
   const [atual, setAtual] = useState<number>(0);
@@ -69,10 +90,15 @@ export default function PrototipoPage() {
                 />
               </div>
 
-              {/* Título da tela */}
-              <h3 className="text-xl font-semibold text-[#304878] mt-6">
-                {imagens[atual].titulo}
-              </h3>
+              {/* Título e descrição da tela */}
+              <div className="mt-6 max-w-3xl mx-auto">
+                <h3 className="text-xl font-semibold text-[#304878] mb-4">
+                  {imagens[atual].titulo}
+                </h3>
+                <p className="text-lg text-[#415A77] text-justify bg-white rounded-lg p-6 shadow-md">
+                  {imagens[atual].descricao}
+                </p>
+              </div>
 
               {/* Botões de navegação */}
               <button
