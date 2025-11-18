@@ -100,6 +100,7 @@ export default function Chatbot() {
                       key={f.question}
                       onClick={() => handleAsk(f.question, f.answer)}
                       className="text-left text-sm bg-gray-100 hover:bg-gray-200 transition-colors px-3 py-2 rounded-lg"
+                      ///teste 
                     >
                       {f.question}
                     </button>
